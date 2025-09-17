@@ -71,7 +71,7 @@ const Navbar = () => {
                         </a>
 
                         {/* Dropdown section */}
-                        <div className="absolute z-[9999]Y group-hover:block w-[200px] bg-white text-black shadow-md">
+                        <div className="absolute z-[9999]Y group-hover:block w-[200px] bg-white text-black shadow-md p-2">
                             <ul>
                                 {DropdownLinks.map(({id, name, link})=> (
                                     <li key={id}>
@@ -85,6 +85,14 @@ const Navbar = () => {
                                 ))}
                             </ul>
                         </div>
+                    </li>
+
+                    { /* Login button section */ }
+                    <li>
+                        <button className="flex justify-center items-center gap-2 bg-secondary text-xl h-[40px] text-white px-5 py-2 hover:scale-105 duration-300">
+                            <FaUser />
+                            My Account
+                        </button>
                     </li>
                 </ul>
             </div>
